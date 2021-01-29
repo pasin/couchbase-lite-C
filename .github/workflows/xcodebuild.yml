@@ -24,6 +24,12 @@ jobs:
       with:
         submodules: recursive
 
+#### PREPARE
+
+    - name: Install doxygen
+      shell: bash
+      run: brew install doxygen
+      
 #### BUILD
 
     - name: "Build C Tests"
